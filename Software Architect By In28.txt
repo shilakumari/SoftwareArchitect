@@ -198,6 +198,7 @@ SOFTWARE ARCHITECT
 		Attend atleast three conferences every year
 		Attend/Setup Architecture/Design Meetings within your organization
 	Be proactive and take ownership/responsibility
+
 5. Frequent Questions
 	Architecture vs Design
 	:	Design
@@ -209,5 +210,6 @@ SOFTWARE ARCHITECT
 	Is architecture needed in agile?
 	What technology trends are impact today?
 	What are the best practices?
+
 
 https://github.com/in28minutes/first-steps-to-software-architect/
