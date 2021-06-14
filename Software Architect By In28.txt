@@ -23,6 +23,7 @@ NEED FOR ARCHITECTURE
 	Enormous scale
 	Technology evolution
 
+
 GOAL OF AN ARCHITECT
 	To architect and support building of an application which 
 	 satisfies the business needs.
@@ -210,6 +211,5 @@ SOFTWARE ARCHITECT
 	Is architecture needed in agile?
 	What technology trends are impact today?
 	What are the best practices?
-
 
 https://github.com/in28minutes/first-steps-to-software-architect/
