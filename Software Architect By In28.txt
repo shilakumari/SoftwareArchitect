@@ -1,0 +1,213 @@
+would be discussed:
+	way to think
+	Importance
+	take steps 
+
+Not be discussed:
+	Technology details
+	Specific solutions
+	TOGF or Zachman (These are architecter methodology)
+
+Thought Process
+	Promote reuse
+	Consistency
+	Be agile & Avoid over design
+	Fail fast & Early feedback
+	Solve difficult problem first
+	Minimize cycle time
+
+
+NEED FOR ARCHITECTURE
+	Distributed Systems
+	Device explosion
+	Enormous scale
+	Technology evolution
+
+GOAL OF AN ARCHITECT
+	To architect and support building of an application which 
+	 satisfies the business needs.
+	TECHNOLOGY SUPPORTS/ENABLE BUSINESS
+		we build applications is to support a business needs.
+	business needs:
+	 Functional requirements
+	 non-Functional requirements
+	 Quick features releases
+	 Early feedback
+	 Quick troubleshooting and support
+
+ARCHITECT TYPES
+	Enterprise architect
+	Application architect
+SOFTWARE ARCHITECT
+0. Fundamentals
+1. Enterprise Standards
+2. Application Standards
+3. Enable Your Teams
+4. Where can I Start?
+5. Frequent Questions
+
+0. Fundamentals
+	Strong Tech Capability
+		Understanding big picture(languages, frameworks, tools, Devices, cloud, Microservices, big data, UI)
+		Technology trends:
+			[2018]Spring boot is the leading java framework to develop micro services.
+			[2018]React has nullified aii first mover advantage that Angularjs had.
+			[2018]containers, devOps, Microservices, Bid data, cloud are the popular buzzwords.
+		Hands on is big plus 
+		Diagnostic skills
+	Domain Knowledge
+		Understand business
+		Understand future needs
+	Forward Looking and Agile
+		Decision making
+		Proactive
+		New opportunities
+		Short term implementation
+	Great Communication
+		All stack holders
+	Impeccable(Errorless) credibility	
+1. Enterprise Standards
+	Why? - Consistency(it makes easer for maintaining)
+	Define 
+	:	Big picture
+		Automation testing(Logging, Audit tralls, security, performance, other NFRs(Non functional requirements))
+		Process
+			CI(Continuous Integration)
+			: If you make a commit with a compilation error with that test failure or an automation test failure, 
+				Integration will help you to find that very very quickly. So as soon as I do commit, this integration server kicks in.
+				It would run the build and it would ensure that your comment did not break anything,
+				having the right process defined at the enterprise level.
+				Helps a lot in making sure that all the teams are consistent and 
+				making sure that the quality of deliverables in one of the teams is equally good.
+
+			, Pair programming
+			: Pair programming as a practice has proved to be a great success 
+				especially when you are designing complex use cases as well as when you
+				are taking new team members in getting team members paired with experienced programmers.
+				It's the quickest way to get the entire team up and running.
+
+			, Splkes, Vertical-slice, 
+			DevOps
+			:DevOps ensure that both the dev and the operations team work together as a single team.
+				It's no longer a separate dev team but create something and throws it out to the operations team.
+				It's more like a single agile team which works together and kind of responsible for everything 
+				so the dev team is also responsible for the operations and the operations team is involved in the dev cycle as well.
+
+			, Contract first, code review, 
+			TDD(Test Driven Development)
+			: It's a great approach to make sure that your lower-level design is good. 
+				writing test before your code ensure that your low level design is good. 
+
+			, BDD(Business Driven Development)
+			: In BDD we start with a features in a given(the input)-when(something happens)-then(do this) formate.
+				Following BDD approach ensures that entire spec is testable.
+				Making sure that you have a good code review process in place is very very important.
+				While having automated reviews using tools like Soldano is very important it's also important to have manual reviews.
+				There is only an extent to which automated code tools can find flaws with code.
+				For example a bad method name a bad variable name or a bad class name can never be found out by a tool.
+				And that's where the manual review comes in.
+				It's very important to have manual code review as part of your process
+
+			, DOD. 
+		Tools
+		:	IDE, Build, Deployement, Repository, Version Control
+		 	Monitoring, Security, Performance, Code Quality, Analystics
+			API Gateway, API Documentation, Confluence, Reporting
+
+		,Design
+		:	4 Princiles of Simple Design
+			:	Run all tests
+				Contains no duplication
+				Express intent of programmers
+				Minimise number of classes and methods 
+			,OOPS-SOLID(Solid Principles)
+			:	SRP(Single Responsibility Principle)
+				OCP(Open-Closed Principle)
+				LSP(Liskov Substitution Principle)
+				ISP(Interface Segregation Principle)
+				DIP(Dependency Inversion Principle)
+		 	UI-Design
+			Layering
+			Common Components
+			Patterns
+			Cross Cutting Concern
+			REST API
+			:	Request/Response Structure, URI, Versioning, Security
+				Caching, Filtering, API Testing, API Gateways
+				Archetypes, Stateless, Contract First, Documentatio
+			------->YARAS REST API(https://github.com/darrin/yaras/blob/master/restful-standards.md)
+		,Examples
+		:	Microservices
+			:	Boundaries, Messaging, Monitoring, Deployement
+				Centralized Logging, Containers, Dynamic-Scalling
+	Monitor
+	:	Architecturfe Reviews(sonarqube - Easiest way to ensure your team is writing high quality code, 
+			Checkmarx - makes software security essential infrastructure,
+			ATDynamix - to monitor applications in production.)
+		, Design Reviews
+		Code Reviews, Technical Dept
+	Govern
+	:	Keep the standards current
+		Bottom Up, Don't stifie Innovation
+2. Application Standards
+	Customize Enterprise Standards
+		Boundaries,	High-level Architecture,		Prototyping,
+		Language Layers,	Frameworks,	Messaging,
+		NFFRs,	Code quality,	Performance,	Security,
+		Patterns, Common-components,	Re-use,	DOD(Definition of Done)
+	Monitor and Govern
+		Most steps in CI,	Regular commits,   CI run time,
+		Architecturally, significant Use Cases,	Vertical slices,
+		Appropreate Usege of tools/frameworks
+		Reviews Retrospectives
+3. Enable Your Teams
+	Keep looking for opportunities to improve productivity
+	:	Tools,	Languages, Frameworks
+	Help teams adhere to best engineering practices
+	:	Key Questions
+		:	How often is code commited?
+			How often is code released to test/prod?
+			How much time does it take to make a small code change and take it live ?
+			What is the average time taken to fix a simple bug and take it live?
+	Ensure communication flow between the teams
+	:	Right amount of documentation
+		Appropriate use of Diagrams
+		:	UML, 
+			Component Diagram,
+			Deployement Arhitecture
+			:	nodes, app server
+				Web server
+			Logical architecture
+			:	Layers
+				Frameworks
+		Communication within and outside the team - in the widest sense
+		:	Dev, Test, Operations, Business
+			Spread and use Best Practices with in the organization
+		Involved with a group of architects sharing the best practices and setting in the standards
+		: Weekly Bottom Up Meetings
+4. Where can I Start? 
+	Understand decision made in your project( database, layers, frameworks, commons components, Standards, Messaging).
+	Understand all the enterprice standards defined in orgenization
+	Understand your business area and trends
+	Follow technology trends(architectures, tools, frameworks)
+	:	Thoughtworks tech Radar
+		stackoverflow Developer survey
+		Google for "Developer Surveys"
+		Join meetup Groups in your area
+		Develop skills in other areas - Front End, Database
+		Attend atleast three conferences every year
+		Attend/Setup Architecture/Design Meetings within your organization
+	Be proactive and take ownership/responsibility
+5. Frequent Questions
+	Architecture vs Design
+	:	Design
+		: Any desicion that is easy to change
+		Architecture 
+		: Any desicion that is very difficult to change
+		Example: if you choose Spring mvc framework of your choise for building REST webservices, then this is architecture
+			because once you choose that going back to Ajax or any other framework then you need to spend lot of time.
+	Is architecture needed in agile?
+	What technology trends are impact today?
+	What are the best practices?
+
+https://github.com/in28minutes/first-steps-to-software-architect/
